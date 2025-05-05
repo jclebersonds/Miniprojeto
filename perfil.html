@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuário</title>
+    <link rel="stylesheet" href="/Reflorestamento/css/style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="cadastro_reflorestamento.html">Cadastro de Ações</a></li>
+            <li><a href="perfil.html">Perfil do Usuário</a></li>
+            <li><a href="relatorio.html">Relatório</a></li>
+            <li><a href="destaques.html">Destaques</a></li>
+        </ul>
+    </nav>
+
+    <div id="container">
+        <h1>Perfil do Usuário</h1>
+
+        <img id="avatar" src="" alt="Avatar da Árvore do Usuário" width="150">
+
+        <h2 id="nomeUsuario"></h2>
+
+        <label for="bio">Bio:</label>
+        <textarea id="bio" rows="3"></textarea>
+        <button onclick="salvarBio()">Salvar Bio</button>
+
+        <h3>Árvores Plantadas: <span id="totalArvores">0</span></h3>
+    </div>
+
+    <script src="/Reflorestamento/js/perfil.js"></script>
+    
+</html>

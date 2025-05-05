@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Reflorestamento</title>
+    <link rel="stylesheet" href="/Reflorestamento/css/style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="cadastro_reflorestamento.html">Cadastro de Ações</a></li>
+            <li><a href="perfil.html">Perfil do Usuário</a></li>
+            <li><a href="relatorio.html">Relatório</a></li>
+            <li><a href="destaques.html">Destaques</a></li>
+        </ul>
+    </nav>
+
+    <div id="container">
+        <h1>Relatório de Reflorestamento</h1>
+
+        <label for="usuario">Usuário:</label>
+        <input type="text" id="usuario" placeholder="Digite o nome do usuário">
+        
+        <label for="tipoArvore">Espécie de Árvore:</label>
+        <select id="tipoArvore">
+            <option value="">Todas</option>
+            <option value="Ipê">Ipê</option>
+            <option value="Angico">Angico</option>
+            <option value="Aroeira">Aroeira</option>
+            <option value="Jequitibá">Jequitibá</option>
+            <option value="Peroba do campo">Peroba do campo</option>
+        </select>
+
+        <button onclick="buscarRegistros()">Buscar</button>
+
+        <h2>Resultados da Busca:</h2>
+        <table id="tabelaResultados">
+            <thead>
+                <tr>
+                    <th>Usuário</th>
+                    <th>Quantidade</th>
+                    <th>Espécie</th>
+                    <th>Data</th>
+                </tr>
+            </thead>
+            <tbody id="resultados"></tbody>
+        </table>
+    </div>
+
+    <script src="/Reflorestamento/js/relatorio.js"></script>
+    
+
+</body>
+</html>
